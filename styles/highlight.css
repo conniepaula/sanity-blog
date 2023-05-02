@@ -1,0 +1,80 @@
+
+.hljs {
+	display: inline-block;
+	padding: 0;
+}
+
+.hljs,
+.hljs-subst {
+	color: #EBEBEB;
+}
+
+.hljs-comment {
+	color: #79848E
+}
+
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta-keyword,
+.hljs-name,
+.hljs-selector-tag {
+    font-weight: 700;
+    color: #E781F7;
+}
+
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+	color: #D38E3F;
+}
+
+.hljs-section,
+.hljs-title {
+	color: #FFF0B3;
+	font-weight: 700
+}
+
+.hljs-link,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+	color: #00DAC6
+}
+
+.hljs-literal {
+	color: #BB86FC
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+	color: #00DAC6;
+}
+
+.hljs-meta {
+	color: #6200EE
+}
+
+.hljs-meta-string {
+	color: #038786
+}
+
+.hljs-emphasis {
+	font-style: italic
+}
+
+.hljs-strong {
+	font-weight: 700
+}
+
+      

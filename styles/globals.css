@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+--mask-image-gradient: linear-gradient(to bottom, black  40%, transparent);
+--border-gradient: linear-gradient(to bottom, pink  40%, transparent);
+}
+
+.card {
+    --mouse-x: 0;
+--mouse-y: 0;}
+
+
+.image-gradient {
+    -webkit-mask-image: var(--mask-image-gradient);
+    mask-image: var(--mask-image-gradient);
+}
+
+.border-gradient {
+    border: 1px solid transparent;
+    border-image:  linear-gradient(to bottom, pink  40%, transparent) 10%;
+}
+
+pre code {
+display: inline-block !important;
+padding: 0 !important;
+margin: 0 !important;
+}
+
+pre {
+padding: 0px !important;
+}
+
+code {
+width: 100%;
+padding: 0px !important;
+backgroundColor: none !important;
+}
+
+pre code .hljs {
+background-color: none !important;
+padding: 0px !important;
+}

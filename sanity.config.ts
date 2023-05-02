@@ -1,6 +1,8 @@
-import { defineConfig} from "sanity";
+import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
+import { codeInput } from "@sanity/code-input";
+
 import { schemaTypes } from "./schemas";
 import { myTheme } from "./theme";
 import StudioNavbar from "./components/StudioNavbar";
@@ -12,11 +14,11 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 export default defineConfig({
   basePath: "/studio",
   name: "connies_tech_studio",
-  title: "connie's tech",
+  title: "connie talks tech",
   projectId,
   dataset,
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), visionTool(), codeInput()],
 
   schema: {
     types: schemaTypes,
@@ -25,7 +27,7 @@ export default defineConfig({
     components: {
       logo: Logo,
       navbar: StudioNavbar,
-    }
+    },
   },
   theme: myTheme,
 });
